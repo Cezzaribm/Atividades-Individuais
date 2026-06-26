@@ -21,7 +21,16 @@ elif len(numero) == 9 and numero[0] == "9":
 else:
     print("Número inválido!")
 
-# Questão 05 terminar 
+# Questão 05 
 
-print("Índices das vogais: ", )
-print("Quantidade de vogais: ", )
+vogais = "aeiouAEIOU"
+indices = []
+total = 0
+
+for i in range(len(frase)):
+    if frase[i] in vogais:
+        indices.append(str(i))
+        total += 1
+
+print("Índices das vogais:", ", ".join(indices))
+print("Total:", total, "vogais")
